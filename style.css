@@ -439,6 +439,95 @@ footer  p {
 .hamburger-icon.open span:nth-child(2) { opacity: 0; }
 .hamburger-icon.open span:last-child { transform: rotate(-45deg) translate(10px, -5px); }
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --subtext-color: rgb(85, 85, 85);
+  --card-bg: #ffffff;
+  --border-color: rgb(163, 163, 163);
+  --btn-bg: rgb(53, 53, 53);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --subtext-color: #cccccc;
+  --card-bg: #1e1e1e;
+  --border-color: #444444;
+  --btn-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+p {
+  color: var(--subtext-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+.details-container {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Dark Mode Button */
+.btn-theme {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-color);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Project Filtering */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.filter-btn.active {
+  background-color: var(--btn-bg);
+  color: var(--bg-color);
+}
+
+.project-card.hide {
+  display: none;
+}
 
 @media screen and (max-width: 1400px) {
   #profile {
