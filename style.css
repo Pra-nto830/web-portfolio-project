@@ -413,7 +413,7 @@ section {
   height: 2rem;
 
 }
-/* Hero Profile Image Styling with Animated Gradient Ring */
+
 .section__pic-container {
   position: relative;
   display: flex;
@@ -449,7 +449,17 @@ section {
   }
 }
 
-/* Pulsing Glow Animation */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  pointer-events: none; 
+}
+
+
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 15px rgba(37, 117, 252, 0.4);
@@ -658,7 +668,7 @@ article {
   flex-wrap: wrap;
 }
 
-/* Terminal Styling (Clean without glowing circle behind) */
+
 .terminal-container {
   flex: 1;
   min-width: 320px;

@@ -46,6 +46,8 @@
 
   <!-- Profile Section -->
   <section id="profile">
+    <!-- Background Particle Canvas -->
+   <canvas id="particle-canvas"></canvas>
     <div class="section__pic-container">
       <img src="profile2.png" alt="Pranto Dey profile picture" />
     </div>
@@ -200,53 +202,22 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
 
-    <!-- Filter Buttons -->
-    <div class="filter-container">
-      <button class="filter-btn active" data-category="all">All</button>
-      <button class="filter-btn" data-category="frontend">Frontend</button>
-      <button class="filter-btn" data-category="fullstack">Fullstack</button>
-    </div>
-    
-    <div class="about-containers">
-      <!-- Project 1 -->
-      <div class="details-container color-container project-card" data-category="fullstack">
-        <div class="article-container">
-          <img src="project-1.png" alt="Project 1" class="project-img" />
-        </div>
-        <h2 class="experience-sub-title project-title">Project One</h2>
-        <div class="tech-tags">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>CSS3</span>
-        </div>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com', '_blank')">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com', '_blank')">Live Demo</button>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="details-container color-container project-card" data-category="frontend">
-        <div class="article-container">
-          <img src="project-2.png" alt="Project 2" class="project-img" />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Two</h2>
-        <div class="tech-tags">
-          <span>JavaScript</span>
-          <span>HTML5</span>
-          <span>SASS</span>
-        </div>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com', '_blank')">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com')">Live Demo</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Filter Buttons -->
+  <div class="filter-container">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="frontend">Frontend</button>
+    <button class="filter-btn" data-category="fullstack">Fullstack</button>
+  </div>
+  
+  <!-- Dynamic Project Cards Render Area -->
+  <div id="projects-container" class="about-containers">
+    <!-- Projects will be generated here by JavaScript -->
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact">
