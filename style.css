@@ -119,6 +119,19 @@ nav {
   height: 17vh;
 
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
+
+body.dark-mode nav {
+  background: rgba(18, 18, 18, 0.8);
+}
+
 
 
 
